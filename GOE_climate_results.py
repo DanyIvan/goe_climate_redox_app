@@ -104,11 +104,14 @@ def GOE_climate_plot_results(plot_type, by, by_value, scenario, fratio, variable
     # read and filter data for plots
     if plot_type != 'radiativeflux':
         surface_file = os.path.join(data_folder, fratio, plot_type,
-            'surface', variable.replace(' ', '')) + '.csv'
+            'surface', variable.replace(' ', '').replace('+', '%2B').\
+                replace('=', '%3D')) + '.csv'
         column_file = os.path.join(data_folder, fratio, plot_type,
-            'column', variable.replace(' ', '')) + '.csv'
+            'column', variable.replace(' ', '').replace('+', '%2B').\
+                replace('=', '%3D')) + '.csv'
         profile_file = os.path.join(data_folder, fratio, plot_type,
-            'profiles', variable.replace(' ', '')) + '.csv'
+            'profiles', variable.replace(' ', '').replace('+', '%2B').\
+                replace('=', '%3D')) + '.csv'
 
         surface = pd.read_csv(surface_file, compression='gzip')
         column = pd.read_csv(column_file, compression='gzip')
