@@ -1,0 +1,52 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <title>Results App</title>
+        <link href="/static/app.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+    </head>
+    <body>
+        <div class="expInfo" style="text-align:center; background-color: #020202; color:white; margin-bottom: 1%;">
+            <h1>
+                Climate-redox evolution of the GOE
+            </h1>
+            <h2>Template: Archean2Proterozoic</h2>
+            <h2>CH4:O2 Flux ratio: 0.3</h2>
+        </div>
+        <div class="container" align="center" margin-top="20px">
+            <select id="plot_options">
+                <option value="">Plot</option>
+                <option value="Species">Species</option>
+                <option value="Reactions">Reactions</option>
+                <option value="Radiative Flux">Radiative Flux</option>
+                <option value="atm_bcs">Atmosphere boundary conditions</option>
+                <option value="species_bcs">Species flux boundary conditions</option>
+            </select>
+            <select id="by" >
+                <option value="">By</option>
+                <option value="Temperature">Temperature</option>
+                <option value="Relative humidity">Relative humidity</option>
+            </select>
+            <button class='plots' onclick='goToOptions()'>Click to plot</button>
+        </div>
+        <div class="container-fluid" style="margin-top:40px"> 
+        </div>
+    </body>   
+    <script type="text/javascript">        
+       const goToOptions = function() {
+            let plot_type = $('#plot_options').val().toLowerCase().replace(/\s/g, '');
+            let by = $('#by').val() == 'Temperature' ? 'temp' : 'rh';
+
+            if (plot_type == '' || $('#by').val() == ''){
+                alert('Please select an option for both Plot and By');
+                return;
+            }
+
+            let route = `/projects/goe_climate_redox/${plot_type}/${by}/`
+            console.log(route);
+            window.location = route;  
+        }    
+    </script> 
+
+    
