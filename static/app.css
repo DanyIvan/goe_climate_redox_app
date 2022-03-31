@@ -1,0 +1,62 @@
+body,h1 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+
+.experiments{
+  display: inline-block;
+  }
+.expItem{
+  display: inline-block;
+  }
+.expButton{
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1em;
+  background-color: #ffffff00;
+  border-color: aliceblue;
+  cursor: pointer;
+  }
+
+
+.optionItem{
+display: inline-block;
+margin-top: 20px;
+}
+.optionButton   {
+display: block;
+color: white;
+text-align: center;
+text-decoration: none;
+font-size: 1em;
+background-color: #ffffff00;
+border-color: aliceblue;
+cursor: pointer;
+margin-left: 10px;
+padding: 5px;
+}
+.optionIndex{
+display: block;
+color: white;
+text-align: center;
+text-decoration: none;
+font-size: 0.5em;
+background-color: #ffffff00;
+border-color: aliceblue;
+cursor: pointer;
+margin-left: 10px;
+padding: 5px;
+}
+
+header {
+    /* header styles */
+    width: 100%;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    background-image: url(https://www.vaisala.com/sites/default/files/styles/16_9_liftup_extra_large/public/images/LIFT-Mars%20the%20Red%20Planet-1600x900.jpg?itok=YXq-Cv1K);
+    background-position: center;
+    background-size: auto;
+    padding: 35px;
+    color: #fefefe;
+    text-shadow: 0 0 20px #000000;
+  }
