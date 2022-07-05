@@ -1,6 +1,6 @@
 # Climate-Redox evolution of the Great Oxidation Event
 
-![How to plot species](https://filedn.com/lAPYsgzcix0SyzxXsLrqQpS/goe_climate_redox/plot-species.gif)
+![How to plot species](https://filedn.com/lAPYsgzcix0SyzxXsLrqQpS/plot-species-bcs.gif)
 
 This flask web application allows exploring the effect of temperature and relative humidity variations on the Great Oxidation Event with interactive plots made with [plotly](https://plotly.com/python/).
 
@@ -41,16 +41,16 @@ python app.py
 
 ### Plot reactions
 
-![How to plot reactions](https://filedn.com/lAPYsgzcix0SyzxXsLrqQpS/goe_climate_redox/plot-reactions.gif)
+![How to plot reactions](https://filedn.com/lAPYsgzcix0SyzxXsLrqQpS/plot-reactions.gif)
 
 ### Plot radiative flux
 
-![How to plot radiative flux](https://filedn.com/lAPYsgzcix0SyzxXsLrqQpS/goe_climate_redox/plot-radiative-flux.gif)
+![How to plot radiative flux](https://filedn.com/lAPYsgzcix0SyzxXsLrqQpS/plot-radiative-flux.gif)
 
 ### Plot atmospheric boundary conditions
 
-![How to plot atmospheric boundary conditions](https://filedn.com/lAPYsgzcix0SyzxXsLrqQpS/goe_climate_redox/plot-atm-bcs.gif)
+![How to plot atmospheric boundary conditions](https://filedn.com/lAPYsgzcix0SyzxXsLrqQpS/plot-atm-bcs.gif)
 
 ### Plot species flux boundary conditions
 
-![How to plot species flux boundary conditions](https://filedn.com/lAPYsgzcix0SyzxXsLrqQpS/goe_climate_redox/plot-species-bcs.gif)
+![How to plot species flux boundary conditions](https://filedn.com/lAPYsgzcix0SyzxXsLrqQpS/plot-species-bcs.gif)
